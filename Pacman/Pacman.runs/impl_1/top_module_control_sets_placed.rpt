@@ -1,0 +1,75 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Wed Dec 06 15:19:35 2023
+| Host         : CuCuNeko running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_module_control_sets_placed.rpt
+| Design       : top_module
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    22 |
+| Minimum Number of register sites lost to control set restrictions |    77 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |             252 |          110 |
+| No           | Yes                   | No                     |              24 |           11 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             121 |           66 |
+| Yes          | Yes                   | No                     |              12 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+-----------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|          Clock Signal         |                 Enable Signal                 |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++-------------------------------+-----------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                |                                               |                                                        |                1 |              2 |
+|  clk_IBUF_BUFG                | Pacman_unit/time_next                         | Game_state_machine_unit/D4_reg_reg[2]                  |                3 |              5 |
+|  Ghost_blue_unit/time_reg_max |                                               | Game_state_machine_unit/time_reg_reg[19][0]            |                3 |              6 |
+|  clk_IBUF_BUFG                |                                               | Pacman_unit/Pacman_rom_unit/col_reg[3]_i_1_n_0         |                5 |              8 |
+|  clk_IBUF_BUFG                |                                               | Ghost_blue_unit/Blue_Ghost_rom_unit/col_reg[3]_i_1_n_0 |                3 |              8 |
+|  clk_IBUF_BUFG                |                                               | vsync_unit/row_reg_reg[0]_20                           |                3 |              8 |
+|  clk_IBUF_BUFG                |                                               | Phycal_rst_IBUF                                        |                7 |             10 |
+|  clk_IBUF_BUFG                | Pacman_unit/s_y_next                          | Game_state_machine_unit/time_reg_reg[19][0]            |                8 |             10 |
+|  clk_IBUF_BUFG                | Pacman_unit/s_x_next                          | Game_state_machine_unit/time_reg_reg[19][0]            |                7 |             10 |
+|  clk_IBUF_BUFG                | vsync_unit/v_count_reg[9]_i_1_n_0             | Phycal_rst_IBUF                                        |                4 |             10 |
+|  clk_IBUF_BUFG                | vsync_unit/E[0]                               | Phycal_rst_IBUF                                        |                6 |             10 |
+|  clk_IBUF_BUFG                | vsync_unit/E[0]                               | vsync_unit/SR[0]                                       |                3 |             12 |
+|  Ghost_blue_unit/time_reg_max |                                               | Game_state_machine_unit/time_reg_reg[19][1]            |                9 |             14 |
+|  clk_IBUF_BUFG                | Pacman_unit/time_next                         | Game_state_machine_unit/time_reg_reg[19][1]            |               13 |             15 |
+|  clk_IBUF_BUFG                | Stars_unit/E[0]                               | Game_state_machine_unit/D4_reg_reg[2]                  |                7 |             16 |
+|  clk_IBUF_BUFG                | Pacman_unit/start_next                        | Game_state_machine_unit/time_reg_reg[19][0]            |               12 |             17 |
+|  Ghost_red_unit/time_reg_max  |                                               | Game_state_machine_unit/time_reg_reg[19][0]            |               12 |             20 |
+|  clk_IBUF_BUFG                | Game_state_machine_unit/timer_reg[27]_i_1_n_0 | Phycal_rst_IBUF                                        |                6 |             28 |
+|  clk_IBUF_BUFG                |                                               | Game_state_machine_unit/AR[0]                          |               14 |             30 |
+|  clk_IBUF_BUFG                |                                               | Game_state_machine_unit/time_reg_reg[19][0]            |               19 |             32 |
+|  clk_IBUF_BUFG                |                                               | Game_state_machine_unit/time_reg_reg[19][1]            |               19 |             66 |
+|  clk_IBUF_BUFG                |                                               | Game_state_machine_unit/D4_reg_reg[2]                  |               27 |             74 |
++-------------------------------+-----------------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Dec 06 15:19:11 2023
+# Process ID: 18020
+# Current directory: C:/Vivado file/Pacman/Pacman/Pacman.runs/impl_1
+# Command line: vivado.exe -log top_module.vdi -applog -messageDb vivado.pb -mode batch -source top_module.tcl -notrace
+# Log file: C:/Vivado file/Pacman/Pacman/Pacman.runs/impl_1/top_module.vdi
+# Journal file: C:/Vivado file/Pacman/Pacman/Pacman.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_module.tcl -notrace
