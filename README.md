@@ -11,6 +11,13 @@ Pacman_FPGA is a complete Pac-Man–style hardware game built in Verilog for Xil
 - Optional seven-segment score display interface (`sseg`, `an`) alongside the VGA overlay.
 - Ready-to-use bitstream (`Pacman/Pacman.runs/impl_1/top_module.bit`) generated with Vivado 2015.4.
 
+## Demo Video
+Click the image below to watch the hardware in action:
+
+[![Pacman FPGA Demo](https://img.youtube.com/vi/MjYjfHu0_5E/0.jpg)](https://youtu.be/MjYjfHu0_5E)
+
+*Direct Link: [https://youtu.be/MjYjfHu0_5E](https://youtu.be/MjYjfHu0_5E)*
+
 ## Repository Layout
 - `Pacman/` – Vivado project (`Pacman.xpr`), HDL sources under `Pacman.srcs/sources_1/new/`, synthesis/implementation runs, and generated bitstream.
 - `Finish/` – Demo video plus the original project presentation and report for reference.
